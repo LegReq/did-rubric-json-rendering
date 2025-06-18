@@ -10,7 +10,8 @@ There are two separate HTML files:
 -  `evaluation.html` which renders a full evaluation using the `src/renderEvaluation.js` and `src/renderCriteria.js` scripts.
 
 Because the scripts use `fetch` to retrieve the JSON files stored in the `json` folder (copying the did-methods approach), 
-it is necessary to use a http-server in development to host these files. 
+it is necessary to use a http-server in development to host these files. Just opening the HTML files in the browser fails due to a 
+cors issue.
 
 I used the http-server npm package, the only dependency of this project and only a **development** dependency.
 

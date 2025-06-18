@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="evaluation-container"></div>
+
+    <script src="src/criteriaRenderer.js"></script>
+    <script src="src/evaluationRenderer.js"></script>
+    <script>
+        console.log('Rendering evaluation...');
+        renderEvaluation().catch(error => {
+            console.error('Failed to render evaluation:', error);
+        });
+    </script>
+</body>
+</html> 

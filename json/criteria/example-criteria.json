@@ -1,0 +1,98 @@
+{
+    "name": "Open contribution (participation)",
+    "label": "1.1",
+    "exampleAssessments": [
+      {
+        "id": "a-1",
+        "method": "did:v1.testnet",
+        "spec": "B",
+        "net": "B",
+        "reg": "B",
+        "note": "Spec (B) : Created by Digital Bazaar\nNet (B) and Reg (B) : Rules are managed by the Veres One Foundation\nGithub is open to the public and the spec is a CCG Work Item.\n[eval1]"
+      },
+      {
+        "id": "a-2",
+        "method": "did:v1.production",
+        "spec": "A-",
+        "net": "A-",
+        "reg": "A-",
+        "note": "Spec (A-), Net (A-), and Reg (A-): The Veres One Community Group is open to participation by anyone and it will be taking over control of the specification. However, the Veres Foundation, which will handle operational control, is likely to have a disproportionate voice in the evolution of the specification, network, and registry.\n[eval1]"
+      },
+      {
+        "id": "a-3",
+        "method": "did:web",
+        "spec": "A",
+        "net": "B",
+        "reg": "C/D",
+        "note": "Spec (A): Owned by CCG at W3C, anyone can join.\rNet (B): Most of the network is controlled by public or private entities.\nReg: Controlled by the Domain Holder, which is a restricted set (C) and in some cases may not be known to the resolving party (D).\n[eval-2]"
+      },
+      {
+        "id": "a-4",
+        "method": "did:ion",
+        "spec": "A-",
+        "net": "B",
+        "reg": "B",
+        "note": "Spec (A-): Large organizations pay a larger fee, while individuals participate for free. This affects both influence and accessibility.\nNet (B) and Reg (B): Bitcoin is mostly open, but core devs hold elevated power. IPFS is open source, run on github, but primarily funded, resourced, and managed by Protocol Labs.\n[eval-3]"
+      }
+    ],
+    "question": {
+      "question": "How open is participation in governance decisions?"
+    },
+    "assessmentTemplate": {
+      "columns": [
+        {
+          "heading": "Method",
+          "type": "method",
+          "propertyRef": "method"
+        },
+        {
+          "heading": "Spec.",
+          "type": "enhancedLetter",
+          "propertyRef": "spec"
+        },
+        {
+          "heading": "Net.",
+          "type": "enhancedLetter",
+          "propertyRef": "net"
+        },
+        {
+          "heading": "Reg.",
+          "type": "enhancedLetter",
+          "propertyRef": "reg"
+        },
+        {
+          "heading": "Notes.",
+          "type": "note",
+          "propertyRef": "note"
+        }
+      ]
+    },
+    "source": {
+      "sectionRef": "DID Method Rubric v1.0.0 (draft) ",
+      "sourceSection": "2.1.1",
+      "sourceRef": "https://www.w3.org/TR/did-rubric#criteria-1"
+    },
+    "response": {
+      "type": "multipleChoice",
+      "possibleResponses": [
+        {
+          "label": "A",
+          "meaning": "Anyone can participate in an open, fair process where all participants have equal opportunity to be heard and influence decisions."
+        },
+        {
+          "label": "B",
+          "meaning": "Anyone can comment and contribute to open debate, but decisions are ultimately made by a closed group."
+        },
+        {
+          "label": "C",
+          "meaning": "Debate is restricted to a selected but known group."
+        },
+        {
+          "label": "D",
+          "meaning": "Debate is conducted in secret by an unknown group."
+        }
+      ]
+    },
+    "relevance": "Governance determines how the rules of the underlying network are set and maintained. The more parties that are able to contribute to governance debates, the more decentralized the governance.",
+    "id": "https://www.w3.org/TR/did-rubric#criteria-1"
+  }

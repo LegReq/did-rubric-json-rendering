@@ -1,0 +1,71 @@
+{
+  "name": "Transparency",
+  "label": "1.2",
+  "question": {
+    "question": "How visible are rulemaking processes?"
+  },
+  "assessmentTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "type": "method",
+        "propertyRef": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Notes",
+        "type": "note",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "source": {
+    "sectionRef": "DID Method Rubric (draft)",
+    "sourceRef": "https://www.w3.org/TR/did-rubric#criteria-2",
+    "sourceSection": ""
+  },
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Agendas and participation details for all governance discussions are publicly announced, any meetings are broadcast in real-time to any listeners, and all minutes and recordings are captured in realtime and publicly reviewable in perpetuity."
+      },
+      {
+        "label": "B",
+        "meaning": "Minutes of meetings are reviewable by the public, including all votes and who cast them, but real-time observation may be limited."
+      },
+      {
+        "label": "C",
+        "meaning": "All current rules are publicly available."
+      },
+      {
+        "label": "D",
+        "meaning": "Rules may be changed without public notice."
+      }
+    ]
+  },
+  "relevance": "While participation measures active contribution, transparency measures the visibility of discussions affecting rule making. If such discussions are only visible to a limited group, it centralizes decision making in ways that Evaluators and users cannot easily see.",
+  "id": "https://www.w3.org/TR/did-rubric#criteria-2",
+  "exampleAssessments": [
+    "a-5",
+    "a-6",
+    "a-7",
+    "a-8"
+  ],
+  "version": "1.0.0"
+}

@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- <button id="new-evaluation-button" onclick="newEvaluation()">New Evaluation</button> -->
     <div id="evaluation-container"></div>
 
     <script src="src/criteriaRenderer.js"></script>
     <script src="src/evaluationRenderer.js"></script>
     <script>
         console.log('Rendering evaluation...');
-        renderEvaluation().catch(error => {
+        let evaluationPath = './json/evaluations/example-evaluation.json';
+        renderEvaluation(evaluationPath).catch(error => {
             console.error('Failed to render evaluation:', error);
         });
     </script>

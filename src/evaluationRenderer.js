@@ -1,6 +1,5 @@
-
-async function renderEvaluation() {
-    const response = await fetch('./json/example-evaluation.json');
+async function renderEvaluation(evaluationPath) {
+    const response = await fetch(evaluationPath);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -52,10 +51,10 @@ function generateEvaluationHtml(evaluation) {
             </thead>
             <tbody>
                 ${evaluation.useCases.map(useCase => `
-                    <tr>
+                    <tr id="${useCase.id}">
                         <td>${useCase.id}</td>
                         <td>${useCase.name}</td>
-                        <td>${useCase.desc}</td>
+                        <td>${useCase.description}</td>
                     </tr>
                 `).join('')}
             </tbody>

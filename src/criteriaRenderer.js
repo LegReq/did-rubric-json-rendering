@@ -1,4 +1,6 @@
 
+
+
 // TODO: Currently only rendering single criteria. Need to create a fetch loop to simulate the did-rubric similar to DID methods.
 async function renderAllCriteria() {
     try {

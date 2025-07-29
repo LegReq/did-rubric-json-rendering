@@ -23,19 +23,24 @@ function renderCriteria(criteria, isEvaluation = false) {
     console.log(criteria);
     return `
     <div class="criteria">
-        <h1>${criteria.label} ${criteria.name}</h1>
+        <div class="section"/>
+            <h1>${criteria.label} ${criteria.name}</h1>
+            <div class="label-border></div> 
+        <div>
         ${(criteria.source && criteria.source.sourceRef) ? `
             <div class="source">
                 <p>Source: ${criteria.source.sourceRef}</p>
             </div>
         ` : ''}
 
-        <div class="question-section">
+        </div>
+        <div class="question section">
+            <h4>QUESTION</h4>
             <h1>${criteria.question.question}</p>
             <p>${criteria.question.instruction ? criteria.question.instruction : ''}</p>
         </div>
 
-        <div class="responses-section">
+        <div class="responses section">
             <h4>RESPONSES</h4>
             <div class="responses-list">
                 ${criteria.response && criteria.response.possibleResponses && criteria.response.possibleResponses.map(response => `
@@ -48,12 +53,12 @@ function renderCriteria(criteria, isEvaluation = false) {
 
         </div>
 
-        <div class="relevance-section">
+        <div class="relevance section">
             <h4>RELEVANCE</h4>
             <p>${criteria.relevance}</p>
         </div>
 
-        <div class="assessments-section">
+        <div class="assessments section">
             <h4>${isEvaluation ? 'ASSESSMENTS' : 'EXAMPLE ASSESSMENTS'}</h4>
             <table>
             <thead>

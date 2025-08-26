@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DID Rubric Evaluations</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Criteria</h1>
-    </header>
-    <div id="criteria-container"></div>
+  <header class="header">
+    <a href="/" class="title">DID Rubric Evaluations</a>
+    <div class="header-buttons">
 
-    
-    <script src="src/criteriaRenderer.js"></script>
-    <script>
-        renderAllCriteria().catch(error => {
-            console.error('Failed to render criteria:', error);
-        });
-    </script>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="status" class="state">Loading evaluations…</div>
+    <div id="count" class="meta" hidden></div>
+    <ul id="list" class="evals"></ul>
+  </main>
+
+  <script>
+    // Wire up buttons if you have scripts; otherwise remove or replace these
+    document.getElementById('load-evaluation')?.addEventListener('click', () => {
+      // hook up your existing load flow here
+      alert('Implement load-evaluation flow here.');
+    });
+    document.getElementById('new-evaluation')?.addEventListener('click', () => {
+      // you can link to docs or run your CLI separately
+      alert('Create new evaluation via: npm run new-evaluation <name>');
+    });
+
+    async function loadEvaluations() {
+      const statusEl = document.getElementById('status');
+      const listEl = document.getElementById('list');
+      const countEl = document.getElementById('count');
+
+      try {
+        const res = await fetch('./evaluations.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        if (!Array.isArray(data) || data.length === 0) {
+          statusEl.textContent = 'No evaluations found. Create one with: npm run new-evaluation <name>';
+          return;
+        }
+
+        // Sort by name (optional)
+        data.sort((a, b) => String(a.name).localeCompare(String(b.name)));
+
+        // Render list
+        listEl.innerHTML = '';
+        for (const item of data) {
+          const name = item?.name ?? 'Untitled';
+          const link = item?.link ?? `./evaluations/${name}.html`;
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = link;
+          a.textContent = name;
+          li.appendChild(a);
+          listEl.appendChild(li);
+        }
+
+        countEl.textContent = `${data.length} evaluation${data.length === 1 ? '' : 's'}`;
+        countEl.hidden = false;
+        statusEl.textContent = '';
+      } catch (err) {
+        console.error('Failed to load evaluations.json:', err);
+        document.getElementById('status').textContent =
+          'Error loading evaluations. Ensure evaluations.json exists and is valid JSON.';
+      }
+    }
+
+    loadEvaluations();
+  </script>
 </body>
-</html> 
+</html>

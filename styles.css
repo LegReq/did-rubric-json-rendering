@@ -1,5 +1,12 @@
 body {
     color: #363636;
+    margin: 0px;
+}
+
+.container {
+  max-width: 1200px;   /* or 960px, 1440px – whatever suits your design */
+  margin: 0 auto;       /* centers the container */
+  padding: 0 1rem;      /* adds a little spacing on small screens */
 }
 
 .response-label {
@@ -15,6 +22,11 @@ td {
     width: 100px;
     border: 5px solid #1A8572;
     margin-top: 0.25rem;
+}
+
+.category-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 
@@ -39,4 +51,75 @@ td {
 
 .assessments table, .assessments th, .assessments td {
     border: 1px solid black;
+}
+
+.evaluation table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.evaluation-title, .use-case-header, .methods-header {
+    background-color: #1A8572;
+    color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none!important;
+  color: #1A8572!important;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-button {
+  background-color: #1A8572;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.header-button:hover {
+  background-color: #156d5f; /* slightly darker */
+}
+
+.json-path {
+  color: red
 }

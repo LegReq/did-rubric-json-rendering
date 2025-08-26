@@ -1,6 +1,6 @@
-{
+const evaluationTemplate = {
   "id": "",
-  "title": "My did:webvh Evaluation",
+  "title": "",
   "url": "",
   "evaluators": [
     {
@@ -2326,3 +2326,74 @@
     }
   ]
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loadButton = document.getElementById("load-evaluation");
+  const fileInput = document.getElementById("file-input");
+
+  if (!loadButton || !fileInput) {
+    console.error("Load button or file input not found in the document.");
+    return;
+  }
+
+  loadButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    fileInput.click(); // opens file dialog
+  });
+
+  fileInput.addEventListener("change", async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      const evaluationData = JSON.parse(text);
+
+      // If renderEvaluation can accept a data object:
+      if (typeof renderEvaluation === 'function') {
+        renderEvaluation(evaluationData);
+      } else {
+        console.error('renderEvaluation is not defined or not a function.');
+      }
+    } catch (error) {
+      console.error("Failed to load evaluation:", error);
+      alert("Error loading evaluation file. Please make sure it’s a valid JSON file.");
+    }
+
+    // Reset file input so user can re-select the same file if needed
+    event.target.value = '';
+  });
+
+  const newEvalBtn = document.getElementById("new-evaluation");
+
+  newEvalBtn.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    try {
+      // Step 1: Fetch the template file
+      const template = evaluationTemplate
+
+      // Step 2: Show the save file dialog
+      const handle = await window.showSaveFilePicker({
+        suggestedName: "new-evaluation.json",
+        types: [{
+          description: 'JSON Files',
+          accept: { 'application/json': ['.json'] },
+        }]
+      });
+
+      // Step 3: Write the file
+      const writable = await handle.createWritable();
+      await writable.write(JSON.stringify(template, null, 2));
+      await writable.close();
+
+      renderEvaluation(template)
+      alert("New evaluation file created successfully!");
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        console.error("Error creating new evaluation:", err);
+        alert("Something went wrong.");
+      }
+    }
+  });
+});

@@ -21,6 +21,7 @@ async function renderAllCriteria() {
 
 function renderCriteria(criteria, isEvaluation = false) {
     console.log(criteria);
+    // TODO: Add ID to this html element so you can link to it.
     return `
     <div class="criteria">
         <div class="section"/>

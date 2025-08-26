@@ -1,25 +1,32 @@
 async function renderEvaluation(evaluationPath) {
+
+    console.log("Using default evaluation path");
     const response = await fetch(evaluationPath);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const evaluation = await response.json();
-    const evaluationHtml = generateEvaluationHtml(evaluation);
+    const evaluationJson = await response.json();
+    console.log("Loaded evaluation from default path:", evaluationPath);
+
+    const evaluationHtml = generateEvaluationHtml(evaluationJson, evaluationPath);
     const evaluationContainer = document.getElementById('evaluation-container');
     if (evaluationContainer) {
         evaluationContainer.innerHTML = evaluationHtml;
     }
 }
 
-function generateEvaluationHtml(evaluation) {
+
+function generateEvaluationHtml(evaluation, evaluationPath) {
     return `
     <div class="evaluation">
+        <h3>Edit the JSON file in the respository at <span class="json-path">${evaluationPath.substring(3)}</span> to change the contents of this evaluation.</h3>
         <table class="evaluation-masthead">
             <thead>
                 <tr>
                     <th class="evaluation-title" colspan="2">
-                        <div>${evaluation.id}</div>
-                        <div><h1>${evaluation.title}</h1></div>
+                        <div>${evaluation.id?? ""}</div>
+                        <div><h1>${evaluation.title ?? ""}</h1></div>
+                        <div><h4>${evaluation.subtitle ?? ""}</h1></div>
                     </th>
                 </tr>
             </thead>
@@ -33,8 +40,8 @@ function generateEvaluationHtml(evaluation) {
                     </td>
                 </tr>   
                 <tr class="evaluation-date">
-                    <th>DATE</th>
-                    <td>${evaluation.evaluationDate}</td>
+                    <th>EVALUATION DATE</th>
+                    <td>${evaluation.evaluationDate ?? ""}</td>
                 </tr>
                 <tr class="evaluation-funding">
                     <th>FUNDING</th>
@@ -47,7 +54,7 @@ function generateEvaluationHtml(evaluation) {
             <h4>USE CASES REFERENCED</h4>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="use-case-header">
                         <th>LABEL</th>
                         <th>NAME</th>
                         <th>DESCRIPTION</th>
@@ -69,7 +76,7 @@ function generateEvaluationHtml(evaluation) {
             <h4>METHODS EVALUATED</h4>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="methods-header">
                         <th>LABEL</th>
                         <th>SPECIFICATION</th>
                         <th>NETWORK</th>

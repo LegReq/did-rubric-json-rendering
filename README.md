@@ -1,21 +1,16 @@
-# DID Rubric Criteria and Evaluation Rendering
+# DID Rubric Evaluation Rendering
 
 This repository contains two scripts that use JS Templating to render both a stand alone DID Rubric Criteria and a DID Rubric Evaluation from JSON. The example JSONs for this rendering can be found under the `json` folder.
 
-## Run the rendering
+The intention of this tool is to enable people to generate and render DID Rubric Evaluations in HTML. It is intented to be simple and lightweight. 
 
-There are two separate HTML files:
+## Creating an Evaluation
 
--  `index.html` which renders a single criteria using the `src/renderCriteria.js` script.
--  `evaluation.html` which renders a full evaluation using the `src/renderEvaluation.js` and `src/renderCriteria.js` scripts.
-
-Because the scripts use `fetch` to retrieve the JSON files stored in the `json` folder (copying the did-methods approach), 
-it is necessary to use a http-server in development to host these files. Just opening the HTML files in the browser fails due to a 
-cors issue.
-
-I used the http-server npm package, the only dependency of this project and only a **development** dependency.
-
-1. Install dependencies `npm install`
-2. Run server `npm run dev`
-3. Go to `http://localhost:8080` or `http://localhost:8080/evaluation.html`
+1. Install npm packages: `npm install`
+2. Generate a new evaluation: `npm run new-evaluation <evaluation_name>` 
+3. Run the rendering tool: `npm run dev`
+4. Open the website at [localhost:8080](http://localhost:8080)
+5. Navigate to the evaluation page at `/evaluations/<evaluation_name>`
+6. Edit the evaluation JSON file (in the repo) at `./json/evaluations/<evaluation_name>.json`
+7. Trigger rerender of the HTML. (Ctrl+Shift+R for hard refresh)
 

@@ -17,21 +17,14 @@
   </header>
 
   <main class="container">
+    <h3>To add a new evaluation run <code class="script">npm run new-evaluation &ltevaluation_name&gt</code> in the terminal.</h3>
     <div id="status" class="state">Loading evaluations…</div>
     <div id="count" class="meta" hidden></div>
     <ul id="list" class="evals"></ul>
+
   </main>
 
   <script>
-    // Wire up buttons if you have scripts; otherwise remove or replace these
-    document.getElementById('load-evaluation')?.addEventListener('click', () => {
-      // hook up your existing load flow here
-      alert('Implement load-evaluation flow here.');
-    });
-    document.getElementById('new-evaluation')?.addEventListener('click', () => {
-      // you can link to docs or run your CLI separately
-      alert('Create new evaluation via: npm run new-evaluation <name>');
-    });
 
     async function loadEvaluations() {
       const statusEl = document.getElementById('status');

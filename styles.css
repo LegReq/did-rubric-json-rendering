@@ -123,3 +123,7 @@ th {
 .json-path {
   color: red
 }
+
+.script {
+  background-color: lightgrey;
+}

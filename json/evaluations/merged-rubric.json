@@ -42,12 +42,12 @@
     {
       "id": "https://www.w3.org/TR/did-rubric#eval-5",
       "name": "did:web Rubric Evaluation",
-      "description": "Funded by Digital Bazaar under DHS SVIP contract 70RSAT20T00000029. Available at https://didevaluations.com/evals/v1.2022.03.01.pdf."
+      "description": "Funded by Digital Bazaar under DHS SVIP contract 70RSAT20T00000029. Available at https://didevaluations.com/evals/web.2022.03.01.pdf."
     },
     {
       "id": "https://www.w3.org/TR/did-rubric#eval-6",
       "name": "did:ion Rubric Evaluation",
-      "description": "Funded by Digital Bazaar under DHS SVIP contract 70RSAT20T00000029. Available at https://didevaluations.com/evals/v1.2022.03.01.pdf."
+      "description": "Funded by Digital Bazaar under DHS SVIP contract 70RSAT20T00000029. Available at hhttps://didevaluations.com/evals/ion.2022.03.01.pdf."
     }
   ],
   "useCases": [
@@ -231,12 +231,12 @@
   "categories": [
     {
       "name": "Rulemaking",
-      "label": "0",
+      "label": "1",
       "description": "Rulemaking criteria address who makes the rules and how. Output of rulemaking are the rules.",
       "criteria": [
         {
           "name": "Open contribution (participation)",
-          "label": "0.0",
+          "label": "1.1",
           "id": "https://www.w3.org/TR/did-rubric#criteria-1",
           "source": null,
           "question": {
@@ -389,7 +389,7 @@
         },
         {
           "name": "Transparency",
-          "label": "0.1",
+          "label": "1.2",
           "id": "https://www.w3.org/TR/did-rubric#criteria-2",
           "source": null,
           "question": {
@@ -545,7 +545,7 @@
         },
         {
           "name": "Separation of Power",
-          "label": "0.2",
+          "label": "1.3",
           "assessments": [
             {
               "id": "a-21",
@@ -611,7 +611,7 @@
         },
         {
           "name": "Decision Making Structures",
-          "label": "0.3",
+          "label": "1.4",
           "assessments": [
             {
               "id": "a-24",
@@ -723,7 +723,7 @@
         },
         {
           "name": "Cost to introduce rule change",
-          "label": "0.4",
+          "label": "1.5",
           "assessments": [
             {
               "id": "a-27",
@@ -815,7 +815,7 @@
         },
         {
           "name": "Cost to decide on rule changes",
-          "label": "0.5",
+          "label": "1.6",
           "assessments": [
             {
               "id": "a-30",
@@ -909,12 +909,12 @@
     },
     {
       "name": "Design",
-      "label": "1",
+      "label": "2",
       "description": "Design criteria addresses the method as designed. In other words, the output of the rulemaking: what rules apply to this DID method?",
       "criteria": [
         {
           "name": "Permissioned Operation",
-          "label": "1.0",
+          "label": "2.1",
           "id": "https://www.w3.org/TR/did-rubric#criteria-6",
           "source": null,
           "question": {
@@ -1052,7 +1052,7 @@
         },
         {
           "name": "Interoperability",
-          "label": "1.1",
+          "label": "2.2",
           "id": "https://www.w3.org/TR/did-rubric#criteria-7",
           "source": null,
           "question": {
@@ -1174,7 +1174,7 @@
                 "propertyRef": "method"
               },
               {
-                "heading": "Spec.",
+                "heading": "Spec",
                 "type": "enhancedLetter",
                 "propertyRef": "spec"
               },
@@ -1199,7 +1199,7 @@
         },
         {
           "name": "Scope of Usage",
-          "label": "1.2",
+          "label": "2.3",
           "id": "https://www.w3.org/TR/did-rubric#criteria-8",
           "source": null,
           "question": {
@@ -1337,7 +1337,7 @@
         },
         {
           "name": "Cryptocurrency",
-          "label": "1.3",
+          "label": "2.4",
           "assessments": [
             {
               "id": "a-63",
@@ -1409,7 +1409,7 @@
         },
         {
           "name": "Offline creation",
-          "label": "1.4",
+          "label": "2.5",
           "assessments": [
             {
               "id": "a-67",
@@ -1489,7 +1489,7 @@
         },
         {
           "name": "Update Scalability",
-          "label": "1.5",
+          "label": "2.6",
           "assessments": [
             {
               "id": "a-71",
@@ -1577,7 +1577,7 @@
         },
         {
           "name": "Creation Cost",
-          "label": "1.6",
+          "label": "2.7",
           "assessments": [
             {
               "id": "a-75",
@@ -1665,7 +1665,7 @@
         },
         {
           "name": "Update & Deletion Cost (Out-of-pocket)",
-          "label": "1.7",
+          "label": "2.8",
           "assessments": [
             {
               "id": "a-79",
@@ -1753,7 +1753,7 @@
         },
         {
           "name": "Update & Deletion Cost (in-kind)",
-          "label": "1.8",
+          "label": "2.9",
           "assessments": [
             {
               "id": "a-83",
@@ -1843,12 +1843,12 @@
     },
     {
       "name": "Operation",
-      "label": "2",
+      "label": "3",
       "description": "Operation criteria address how the rules are operationalized, ie., how are the rules embodied in a working system.",
       "criteria": [
         {
           "name": "Financial accountability",
-          "label": "2.0",
+          "label": "3.1",
           "id": "https://www.w3.org/TR/did-rubric#criteria-9",
           "source": null,
           "question": {
@@ -1995,7 +1995,7 @@
         },
         {
           "name": "Transactional Performance - Global Create Bandwidth",
-          "label": "2.1",
+          "label": "3.2",
           "assessments": [
             {
               "id": "a-97",
@@ -2100,7 +2100,7 @@
         },
         {
           "name": "Transactional Performance -- Global Update Bandwidth",
-          "label": "2.2",
+          "label": "3.3",
           "assessments": [
             {
               "id": "a-101",
@@ -2188,7 +2188,7 @@
         },
         {
           "name": "Update Latency",
-          "label": "2.3",
+          "label": "3.4",
           "assessments": [
             {
               "id": "a-105",
@@ -2293,7 +2293,7 @@
         },
         {
           "name": "Operational Reliability",
-          "label": "2.4",
+          "label": "3.5",
           "assessments": [
             {
               "id": "a-109",
@@ -2387,7 +2387,7 @@
         },
         {
           "name": "Operational Security",
-          "label": "2.5",
+          "label": "3.6",
           "assessments": [
             {
               "id": "a-113",
@@ -2483,12 +2483,12 @@
     },
     {
       "name": "Enforcement",
-      "label": "3",
+      "label": "4",
       "description": "Criteria in this section deal with the design rules that enable maintaining the integrity of the verifiable data registry (VDR) and the means of applying those rules. Enforcement is the proper execution of the process of ensuring compliance with laws, regulations, rules, standards, and social norms. This includes how the rule of law is applied to entities involved in governance and operation of the method.",
       "criteria": [
         {
           "name": "Auditability",
-          "label": "3.0",
+          "label": "4.1",
           "id": "https://www.w3.org/TR/did-rubric#criteria-12",
           "source": null,
           "question": {
@@ -2611,7 +2611,7 @@
         },
         {
           "name": "Governance Jurisdiction",
-          "label": "3.1",
+          "label": "4.2",
           "assessments": [
             {
               "id": "a-127",
@@ -2665,7 +2665,7 @@
         },
         {
           "name": "Operational Diversity",
-          "label": "3.2",
+          "label": "4.3",
           "assessments": [
             {
               "id": "a-130",
@@ -2745,7 +2745,7 @@
         },
         {
           "name": "Registry Consensus",
-          "label": "3.3",
+          "label": "4.4",
           "assessments": [
             {
               "id": "a-134",
@@ -2841,7 +2841,7 @@
         },
         {
           "name": "Operational Layers",
-          "label": "3.4",
+          "label": "4.5",
           "assessments": [
             {
               "id": "a-138",
@@ -2910,7 +2910,7 @@
         },
         {
           "name": "Layer Diversity",
-          "label": "3.5",
+          "label": "4.6",
           "assessments": [
             {
               "id": "a-142",
@@ -2997,7 +2997,7 @@
         },
         {
           "name": "Verification Relationships",
-          "label": "3.6",
+          "label": "4.7",
           "assessments": [
             {
               "id": "a-146",
@@ -3093,7 +3093,7 @@
         },
         {
           "name": "Authentication Model",
-          "label": "3.7",
+          "label": "4.8",
           "assessments": [],
           "question": {
             "question": "How does the method authenticate a given DID operation as coming from the legitimate DID controller?",
@@ -3118,12 +3118,12 @@
     },
     {
       "name": "Adoption (and diversity)",
-      "label": "4",
+      "label": "5",
       "description": "Adoption criteria address how widely the method and its implementations are used by various parties and systems.",
       "criteria": [
         {
           "name": "Financial Entanglements",
-          "label": "4.0",
+          "label": "5.1",
           "assessments": [
             {
               "id": "a-150",
@@ -3237,7 +3237,7 @@
         },
         {
           "name": "Organizational Maturity in Time",
-          "label": "4.1",
+          "label": "5.2",
           "assessments": [
             {
               "id": "a-154",
@@ -3343,7 +3343,7 @@
         },
         {
           "name": "Release Status",
-          "label": "4.2",
+          "label": "5.3",
           "assessments": [
             {
               "id": "a-158",
@@ -3432,7 +3432,7 @@
         },
         {
           "name": "Maturity",
-          "label": "4.3",
+          "label": "5.4",
           "assessments": [
             {
               "id": "a-162",
@@ -3527,12 +3527,12 @@
     },
     {
       "name": "Security",
-      "label": "5",
+      "label": "6",
       "description": "Security criteria address how the method is cryptographically secured.",
       "criteria": [
         {
           "name": "Robust Crypto",
-          "label": "5.0",
+          "label": "6.1",
           "id": "https://www.w3.org/TR/did-rubric#criteria-24",
           "source": null,
           "question": {
@@ -3644,7 +3644,7 @@
         },
         {
           "name": "Availability",
-          "label": "5.1",
+          "label": "6.2",
           "id": "https://www.w3.org/TR/did-rubric#criteria-28",
           "source": null,
           "question": {
@@ -3735,7 +3735,7 @@
         },
         {
           "name": "Expert Review (Cryptography)",
-          "label": "5.2",
+          "label": "6.3",
           "assessments": [
             {
               "id": "a-179",
@@ -3824,7 +3824,7 @@
         },
         {
           "name": "Expert Review (Consensus)",
-          "label": "5.3",
+          "label": "6.4",
           "assessments": [
             {
               "id": "a-183",
@@ -3913,7 +3913,7 @@
         },
         {
           "name": "Provenance",
-          "label": "5.4",
+          "label": "6.5",
           "assessments": [
             {
               "id": "a-187",
@@ -3998,7 +3998,7 @@
         },
         {
           "name": "United States Federal Compliance",
-          "label": "5.5",
+          "label": "6.6",
           "assessments": [
             {
               "id": "a-191",
@@ -4089,6 +4089,275 @@
           "relevance": "Many US Federal programs and projects require use of cryptography according to standards set by the National Institute of Standards and Technology (NIST), such as:FIPS 186-5 (https://csrc.nist.gov/publications/detail/fips/186/5/draft)NIST 800-131Ar2 (https://csrc.nist.gov/publications/detail/sp/800-131a/rev-2/final)SP 800-186 (https://csrc.nist.gov/publications/detail/sp/800-186/draft)NIST FIPS 186-4 https://csrc.nist.gov/publications/detail/fips/186/4/final)NIST 800-38D (https://csrc.nist.gov/publications/detail/sp/800-38d/final)NIST 800-38F (https://csrc.nist.gov/publications/detail/sp/800-38f/final)FIPS 180-4 (https://csrc.nist.gov/publications/detail/fips/180/4/final)FIPS 800-107r1. (https://csrc.nist.gov/publications/detail/sp/800-107/rev-1/final)",
           "id": "https://didcriteria.com/criteria/30",
           "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "name": "Privacy",
+      "label": "7",
+      "description": "Addresses the ability of a DID method to ensure various privacy mechanisms. When DIDs are used as identifiers for people, it becomes important to consider what tools a DID method offers to operate at different levels of privacy. Use cases that focus on IoT or institutions may not feel that this dimension is especially important (though institutional privacy may sometimes be desirable).",
+      "criteria": [
+        {
+          "name": "Per-DID constraints on visibility",
+          "label": "7.1",
+          "id": "https://www.w3.org/TR/did-rubric#criteria-33",
+          "source": null,
+          "question": {
+            "question": "What provisions are made for restricting visibility of DIDs to audiences other than the general public?"
+          },
+          "response": {
+            "type": "multipleChoice",
+            "possibleResponses": [
+              {
+                "label": "A",
+                "meaning": "Fully private is possible."
+              },
+              {
+                "label": "B",
+                "meaning": "VDR is visible to \"all\", but \"all\" is a restricted audience with enforced terms of service or other disincentives to abuse."
+              },
+              {
+                "label": "C",
+                "meaning": "VDR is fully public with no constraints."
+              }
+            ]
+          },
+          "relevance": "Restricting the audience for a DID is a way to discourage crawling and secondary, possibly abusive publication. However, no mechanism can completely prevent this; creating disincentives, accountability, and/or costs that encourage the DID owner's wishes to be respected is the best we can hope for.",
+          "assessments": [
+            {
+              "id": "a-195",
+              "method": "did:twit",
+              "score": "C",
+              "evaluationCitation": "#eval-2",
+              "note": "A did:tweet is created and updated by posting to a public twitter feed; it is always completely public."
+            },
+            {
+              "id": "a-196",
+              "method": "did:key",
+              "score": "A",
+              "evaluationCitation": "#eval-2",
+              "note": "Nothing about the did:key method requires it to be published anywhere. It is as private or as public as the mechanism used to share it."
+            },
+            {
+              "id": "a-197",
+              "method": "did:trustbloc",
+              "score": "B",
+              "evaluationCitation": "#eval-2",
+              "note": "A did:trustbloc is public to all users of the Hyperledger Fabric instance where it is published -- but that blockchain may be permissioned and restricted to a private audience."
+            }
+          ],
+          "assessmentTemplate": {
+            "columns": [
+              {
+                "heading": "Method",
+                "type": "method",
+                "propertyRef": "method"
+              },
+              {
+                "heading": "Score",
+                "type": "enhancedLetter",
+                "propertyRef": "score"
+              },
+              {
+                "heading": "Notes",
+                "type": "note",
+                "propertyRef": "note"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cross-DID Leakage",
+          "label": "7.2",
+          "id": "https://www.w3.org/TR/did-rubric#criteria-34",
+          "source": null,
+          "question": {
+            "question": "How possible is it to control multiple DIDs, without having an observer of one DID be able to deduce that another DID has the same controller?"
+          },
+          "response": {
+            "type": "multipleChoice",
+            "possibleResponses": [
+              {
+                "label": "A",
+                "meaning": "Each DID is entirely isolated; there is no practical way to infer relationships of common control between them."
+              },
+              {
+                "label": "B",
+                "meaning": "It may be possible to infer relationships of common control based on timing and the IP address of clients, but not based on data persisted in the VDR itself. Inference is expensive or impractical."
+              },
+              {
+                "label": "C",
+                "meaning": "It is possible to infer relationships based on data persisted in the VDR itself, and the inference is easy."
+              }
+            ]
+          },
+          "relevance": "Inferring relationships between Bitcoin addresses allowed law enforcement to track down the operators of Silk Road, even though those operators believed they had privacy.",
+          "assessments": [
+            {
+              "id": "a-198",
+              "method": "did:pkh",
+              "score": "B or C",
+              "evaluationCitation": "#eval-2",
+              "note": "Some of the blockchains used by did:pkh have Bitcoin-like traceability. Others have Ethereum-like features, which include mixers or zkSNARKS/zkSTARKS. However, none of them render a user completely anonymous."
+            },
+            {
+              "id": "a-199",
+              "method": "did:keri",
+              "score": "B",
+              "evaluationCitation": "#eval-2",
+              "note": "If a did:keri uses a blockchain as a witness, it may acquire some privacy characteristics from that blockchain. However, did:keri in and of itself is not easy to correlate."
+            }
+          ],
+          "assessmentTemplate": {
+            "columns": [
+              {
+                "heading": "Method",
+                "type": "method",
+                "propertyRef": "method"
+              },
+              {
+                "heading": "Score",
+                "type": "enhancedLetter",
+                "propertyRef": "score"
+              },
+              {
+                "heading": "Notes",
+                "type": "note",
+                "propertyRef": "note"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Incentives for Multicontext DIDs",
+          "label": "7.3",
+          "id": "https://www.w3.org/TR/did-rubric#criteria-35",
+          "source": null,
+          "question": {
+            "question": "To what extent does the method incentivize (due to cost, hassle, etc.) a DID to be reused in multiple contexts?"
+          },
+          "response": {
+            "type": "multipleChoice",
+            "possibleResponses": [
+              {
+                "label": "A",
+                "meaning": "The natural and default behavior is to create a new DID in each new context, and there is no meaningful incentive to do otherwise."
+              },
+              {
+                "label": "B",
+                "meaning": "It is possible to create and manage numerous DIDs, but the latency, complexity, or monetary expense of doing so results in modest pressure to reuse a DID."
+              },
+              {
+                "label": "C",
+                "meaning": "Each DID is expensive in at least one important dimension. Incentives to reuse are strong."
+              }
+            ]
+          },
+          "relevance": "People will often trade away privacy for a low price or ease of use. Methods that encourage this tradeoff are less optimal from a privacy perspective, even if their privacy features are theoretically reasonable.",
+          "assessments": [
+            {
+              "id": "a-200",
+              "method": "did:btcr",
+              "score": "C",
+              "evaluationCitation": "#eval-2",
+              "note": "At times when Bitcoin value has spiked, creating a DID on Bitcoin has required an expensive transaction. Finality also takes a significant amount of time. This creates incentives to reuse a DID in multiple contexts."
+            },
+            {
+              "id": "a-201",
+              "method": "did:sov",
+              "score": "C",
+              "evaluationCitation": "#eval-2",
+              "note": "The Sovrin ledger deliberately charges for ledger writes to discourage its use for privacy-oriented identifiers."
+            },
+            {
+              "id": "a-202",
+              "method": "did:peer",
+              "score": "A",
+              "evaluationCitation": "#eval-2",
+              "note": "Creating a peer DIDs is free and nearly instantaneous. There are no incentives for reuse."
+            }
+          ],
+          "assessmentTemplate": {
+            "columns": [
+              {
+                "heading": "Method",
+                "type": "method",
+                "propertyRef": "method"
+              },
+              {
+                "heading": "Score",
+                "type": "enhancedLetter",
+                "propertyRef": "score"
+              },
+              {
+                "heading": "Notes",
+                "type": "note",
+                "propertyRef": "note"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Revocation of Consent",
+          "label": "7.4",
+          "id": "https://www.w3.org/TR/did-rubric#criteria-36",
+          "source": null,
+          "question": {
+            "question": "How does one revoke consent for the storage of a DID? (Note how this creates a tension with immutability, which may be valuable in 2.7.1 and elsewhere.)"
+          },
+          "response": {
+            "type": "multipleChoice",
+            "possibleResponses": [
+              {
+                "label": "A",
+                "meaning": "The VDR fully supports removal of data that no longer has consent. Once something is removed, nothing internal to the system allows it to be recovered, and the system no longer qualifies as a data controller."
+              },
+              {
+                "label": "B",
+                "meaning": "The DID method only supports a current view, and the state of an identifier in its VDR can be updated to a deleted or removed state. Thus, the identifier ceases to resolve. However, a permanent record of the previous state of the identifier remains, and could be used to reconstruct historical data. The VDR thus remains a data controller for deleted identifiers, at least in concept."
+              },
+              {
+                "label": "C",
+                "meaning": "The DID method supports both current and previous views of an identifier. While deletes are possible, the old state of an identifier is a fully supported feature, so adding the identifier to the VDR is irrevocable."
+              }
+            ]
+          },
+          "relevance": "Some legal authorities may require that individuals have redress when they are not satisfied with the actions of a data controller. This might include but go beyond the so-called \"right to be forgotten,\" encompassing geographical or jurisdictional limitations, limits on processing, and so forth. Seethis legal analysisfor one view, but note that this is not a well settled legal question.",
+          "assessments": [
+            {
+              "id": "a-203",
+              "method": "did:peer",
+              "score": "A",
+              "evaluationCitation": "#eval-2",
+              "note": "A peer DID is designed to be shared only with the party that has direct need to process it. That party is a single legal entity that can be held responsible for their behavior. The peer DID protocol includes a way to tell that party that the DID must be deleted. Once deletion has occurred, nothing in the peer DID mechanism preserves inappropriate data."
+            },
+            {
+              "id": "a-204",
+              "method": "did:jlinc",
+              "score": "B",
+              "evaluationCitation": "#eval-2",
+              "note": "The `did:jlinc` method supports deletion, and refuses to resolve DIDs that have been deleted. It is also predicated on sophisticated data-sharing agreements that can provide substantial protection for individuals. However, it persists data to an immutable blockchain, meaning that a deleted DID can be reconstructed outside the method, using data that the method created."
+            }
+          ],
+          "assessmentTemplate": {
+            "columns": [
+              {
+                "heading": "Method",
+                "type": "method",
+                "propertyRef": "method"
+              },
+              {
+                "heading": "Score",
+                "type": "enhancedLetter",
+                "propertyRef": "score"
+              },
+              {
+                "heading": "Notes",
+                "type": "note",
+                "propertyRef": "note"
+              }
+            ]
+          }
         }
       ]
     }

@@ -85,6 +85,7 @@ function renderCriteria(criteria, isEvaluation = false) {
         </div>
 
     </div>
+    </div>
     `
 
 }

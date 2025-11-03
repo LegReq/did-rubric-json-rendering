@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DID Rubric Evaluation – merged-rubric</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="title">DID Rubric Evaluations</a>
+  </header>
+  <div id="evaluation-container" class="container">
+  </div>
+
+  <script src="../src/criteriaRenderer.js"></script>
+  <script src="../src/evaluationRenderer.js"></script>
+  <script>
+    const evaluationPath = '../json/evaluations/merged-rubric.json';
+    renderEvaluation(evaluationPath).catch(err => {
+      console.error('Failed to render evaluation:', err);
+    });
+  </script>
+</body>
+</html>

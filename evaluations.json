@@ -2,5 +2,9 @@
   {
     "name": "example-evaluation",
     "link": "./evaluations/example-evaluation.html"
+  },
+  {
+    "name": "merged-rubric",
+    "link": "./evaluations/merged-rubric.html"
   }
 ]
